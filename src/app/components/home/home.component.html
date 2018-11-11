@@ -1,0 +1,55 @@
+<div fxLayout="column" fxLayoutAlign="center center" fxFlexFill>
+  <mat-card class="main-content-card">
+    <div class="content" fxLayout="column" fxFlexFill>
+      <div fxFlex="60" fxLayout="column">
+        <div fxflex="20" class="content-title">
+          <h3>Deficit for week ending:</h3>
+          <div>{{ endDate.format("ddd, DD-MM-YYYY") }}</div>
+        </div>
+        <div fxFlex fxLayoutAlign="center center" class="content-deficit">
+          <h3>
+            <fa-icon icon="fire"></fa-icon>{{ totalOut - totalIn | number }}
+          </h3>
+        </div>
+      </div>
+      <div fxFlex fxLayout="row" fxLayoutGap="5px">
+        <div class="sub" fxFlex fxLayout="column" fxLayoutGap="5px">
+          <div fxFlex fxLayout="column">
+            <div class="sub-title" fxFlex="40" fxLayoutAlign="center center">
+              Average In
+            </div>
+            <div class="sub-detail" fxFlex fxLayoutAlign="center start">
+              {{ averageIn | number }}
+            </div>
+          </div>
+          <div fxFlex fxLayout="column">
+            <div class="sub-detail" fxFlex fxLayoutAlign="center end">
+              {{ totalIn | number }}
+            </div>
+            <div class="sub-title" fxFlex="40" fxLayoutAlign="center center">
+              Total In
+            </div>
+          </div>
+        </div>
+        <div class="sub" fxFlex fxLayout="column" fxLayoutGap="5px">
+          <div fxFlex fxLayout="column">
+            <div class="sub-title" fxFlex="40" fxLayoutAlign="center center">
+              Average Out
+            </div>
+            <div class="sub-detail" fxFlex fxLayoutAlign="center start">
+              {{ averageOut | number }}
+            </div>
+          </div>
+          <div fxFlex fxLayout="column">
+            <div class="sub-detail" fxFlex fxLayoutAlign="center end">
+              {{ totalOut | number }}
+            </div>
+            <div class="sub-title" fxFlex="40" fxLayoutAlign="center center">
+              Total Out
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </mat-card>
+</div>

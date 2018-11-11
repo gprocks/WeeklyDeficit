@@ -1,0 +1,62 @@
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+@import url("https://fonts.googleapis.com/css?family=Varela+Round");
+.login {
+  width: 250px;
+  height: 300px;
+  background-color: rgba($color: #ffffff, $alpha: 0.7);
+  .login-content {
+    height: 100%;
+  }
+  .logo {
+    width: 200px;
+  }
+  button {
+    text-transform: uppercase;
+  }
+  h1 {
+    text-align: center;
+    font-family: "Comfortaa", cursive;
+  }
+}
+
+.main-content-card {
+  font-family: "Varela Round", sans-serif;
+  background-color: rgba($color: #ffffff, $alpha: 0.7);
+  height: 400px;
+  padding: 10px !important;
+  width: 300px;
+  text-align: center;
+  .sub>div {
+    background-color: #cccccc; //#e0e0e0;
+    border-radius: 5px;
+  }
+  .content-title {
+    font-size: 20px;
+  }
+  .content-deficit {
+    font-size: 50px;
+    fa-icon {
+      color: #cc3030;
+      padding-right: 5px;
+    }
+  }
+  .sub-title {
+    font-weight: bold;
+  }
+  .sub-detail {
+    font-size: 25px;
+  }
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(http://www.golfian.com/wp-content/uploads/2016/07/Naughty-Hungry-Pug-Dog-Picture.jpg) center no-repeat fixed;
+  background-size: cover;
+  background-position-x: 42%;
+}
